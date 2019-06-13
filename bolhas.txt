@@ -1,0 +1,56 @@
+-  Canto é vértice? V
+
+-  Numero de formatos? poligonos de numero indeterminado de lados? precisa ter mais de 3 pontos?
+
+Alguma diferença qualquer (cor)
+
+-  Bolhas redondas?
+
+V
+
+-  Resistência é numérica ou mais/menos (se não for, "mais resistentes" é mais que quanto?
+
+bool
+
+-  Objetos são divididos entre macios e duros?
+
+V
+
+-  Estourar é sumir?
+
+V
+
+-  O canhão ocupa alguma parte de dentro da sala ou tem dimensões? É um objeto duro ou macio, se tem dimensões e está dentro da sala, para caso uma bolha colida com o mesmo
+
+SIM, TEM QUE DAR PRA VER ALGO
+
+
+-  O que deve acontecer exatamente? É pra representar graficamente, igual à bola na mesa?
+
+
+
+
+-  A bolha tem aceleração? Tipo, por ser bolha, ela sobe?
+
+retilineo
+
+
+-  Como faz exemplos de uma função que produz gráfico antes de implementar ela?
+
+
+
+
+-  Posições das bolhas? Eu tinha pensado em receber uma lista de bolhas pra disparar e simular o disparo.
+
+
+
+
+-  Quantidades e tipos de canhão?
+
+
+-  "Estratégia de solução"? O problema não pede pra fazer algo especificamente
+
+
+
+
+-  Pode fazer sozinho?
