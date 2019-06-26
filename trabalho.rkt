@@ -276,7 +276,7 @@
 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 1 0 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 65 105 225 0
-0 0 -1 -1           0 7664 0 4 3 85
+0 0 -1 -1           0 7784 0 4 3 85
 (
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
@@ -298,6 +298,255 @@
  #"eachpack\" \"2htdp\") (lib \"universe.rkt\" \"teachpack\" \"2htdp\")"
  #") #f)))"
 ) 0 0 4 29 1 #"\n"
+0 0 17 3 41 #";;;;; Nome de todos integrantes do grupo:"
+0 0 24 29 1 #"\n"
+0 0 17 3 5 #";;;;;"
+0 0 24 29 1 #"\n"
+0 0 17 3 129
+(
+ #";;;;; Augusto Falc\303\243o Flach - 00314134 - afflach - <augustofal"
+ #"caoflach@gmail.com> <github.com/aufgfua> <gitlab.com/augusto.flach>"
+) 0 0 24 29 1 #"\n"
+0 0 17 3 5 #";;;;;"
+0 0 24 29 1 #"\n"
+0 0 17 3 5 #";;;;;"
+0 0 24 29 1 #"\n"
+0 0 17 3 2 #"#|"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 164
+(
+ #"Olha, o programa t\303\241 o mais documentado que eu consegui. Algum"
+ #"as fun\303\247\303\265es, como devem t"
+ #"er visto ali em baixo, n\303\243o consegui fazer os testes com check"
+ #"-expect porque"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 165
+(
+ #"geravam valores aleat\303\263rios,"
+ #" mas elas n\303\243o eram da solu\303\247\303\243o, eram de um extra"
+ #" que botei pra poder juntar tudo de um jeito mais divertido, ent\303"
+ #"\243o s\303\263 botei exemplos."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 151
+(
+ #"O programa \303\251 parametriz\303\241vel, tudo funciona em cima das"
+ #" listas de bolhas, objetos e de um canh\303\243o. N\303\243o fiz pra"
+ #" pol\303\255gonos de n lados pra facilitar os"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 166
+(
+ #"testes e n\303\243o complicar demais a l\303\263gica nem o problema "
+ #"hehe. Por isso, todos objetos s\303\243o quadril\303\241teros. Mas t"
+ #"\303\241 tudo documentado, ent\303"
+ #"\243o \303\251 s\303\263 olhar ali em baixo."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 84
+(
+ #"No moodle mandava ser um "
+ #"arquivo \303\272nico, ent\303\243o t\303"
+ #"\264 botando o relat\303\263rio aqui junto."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 55 #"Sobre como decidi representar os elementos do problema:"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 6 #"Bolha:"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 114
+(
+ #"Fiz uma struct com todos os dados dela. Ela tem, obviamente, uma pos"
+ #"icao X e Y, uma velocidade nos eixos e um raio"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 136
+(
+ #"Al\303\251m disso, ela tem um atributo booleano referente \303\240 r"
+ #"esistencia dela. Toda bolha az"
+ #"ul \303\251 pouco resistente, preta \303\251 muito resistente."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 127
+(
+ #"Al\303\251m disso, pra evitar loops infinitos (que n\303\243o tinha "
+ #"certeza se tinham como acontecer, "
+ #"nem sabia provar que sim ou que n\303\243o)"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 121
+(
+ #"eu botei um n\303\272mero m\303\241ximo de colis\303\265es pra uma b"
+ #"olha. Quando ela realiza MAX_COL colis\303\265es, ela estoura. Enqua"
+ #"nto isso,"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 66
+(
+ #"as bolhas pouco resistentes expl"
+ #"odem em qualquer tipo de colis\303\243o."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 151
+(
+ #"Uma bolha tem um outro atributo"
+ #" que acabei precisando usar. N\303\243o precisava ser dentro dela, m"
+ #"as achei mais pr\303\241tico do que passar como par\303\242metros pa"
+ #"ra"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 70
+(
+ #"muitas funcoes. Ela tem um atributo booleano chamado dent (de dentro"
+ #")."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 103
+(
+ #"Quando ela realiza uma colis\303\243o"
+ #", esse atributo vira #true, at\303\251 que ela n\303\243o esteja col"
+ #"idindo com nada."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 147
+(
+ #"Isso \303\251 pra evitar de ela fazer colis\303\265es consecutivas e"
+ #" ficar se rebatendo caso ainda esteja dentro do objeto ap\303\263s r"
+ #"ebater. Ent\303\243o ela s\303\263 rebate"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 118
+(
+ #"caso aquele atributo seja #f"
+ #"alse, e sempre que n\303\243o est\303\241 colidindo com nenhuma ares"
+ #"ta e nenhum v\303\251rtice, vira #false."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 7 #"Canhao:"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 116
+(
+ #"Represento o canhao s\303\263 como um Posn (x e y), mas n\303\243o f"
+ #"iz um elemento do tipo posn pra ficar mais f\303\241cil de acessar"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 79
+(
+ #"E pareceu fazer mais sentido ler (canhao-x can) do que (posn-x can),"
+ #" mas enfim."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 171
+(
+ #"N\303\243o faz parte do canh\303\243o, mas talvez valha a pena comen"
+ #"tar que inicializo a bolha c"
+ #"om o X e Y do canh\303\243o que v"
+ #"\303\243o arremessar ela, mas fa\303\247o as paredes empurrarem a bo"
+ #"lha,"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 192
+(
+ #"porque da\303\255 ela n\303\243o come\303\247a dentro da parede. Qua"
+ #"ndo executar o programa, vai dar pra ver ele como um c\303\255rculo "
+ #"cinza em alguma ponta, pra ficar mais f\303\241cil de entender o que"
+ #" est\303\241 acontecendo"
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 8 #"Objetos:"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 95
+(
+ #"Para passar um objeto pras fun\303\247\303\265es que fazem o program"
+ #"a, todas precisam de um Objeto-Fechado."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 112
+(
+ #"A ideia era facilitar pra transformar os objetos em pol\303\255gonos"
+ #" gen\303\251ricos, mas talvez d\303\252 muito trabalho, ent\303\243o"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 49 #"j\303\241 estou feliz com o programa funcionando assim."
+0 0 17 29 1 #"\n"
+0 0 17 3 162
+(
+ #"Atualmente, todo objeto \303\251 um quadril\303\241tero (4 posns). P"
+ #"ara ele se transformar em um Objeto-Fechado, tem uma fun\303\247\303"
+ #"\243o pronta (fecha-objetos). Ela funciona com uma"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 63
+(
+ #"lista de objetos, ent\303\243o retorna uma Lista-de-Objetos-Fechados"
+ #"."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 137
+(
+ #"Os objetos escolhi representar como uma lista de 2 elementos, sendo "
+ #"que o segundo \303\251 uma lista de 4 posns (ou 5, se o objeto for f"
+ #"echado)"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 59
+#"Caso seja um objeto fechado, o 5o posn deve ser igual ao 1o"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 125
+(
+ #"O primeiro elemento da lista que representa um objeto (tanto aberto "
+ #"quanto fechado) \303\251 um booleano, representando sua dureza."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 111
+(
+ #"Objetos com #true s\303\243o duros, com #false, macios. Objetos duro"
+ #"s s\303\243o desenhados em preto, os macios s\303\243o azuis."
+) 0 0 17 29 1 #"\n"
+0 0 17 3 162
+(
+ #"O outro elemento da lista \303\251 a outra lista, com 4 elementos de"
+ #" Posn. Uma das regras para ser um objeto \303\251 que os segmentos d"
+ #"e reta que unem dois posn consecutivos"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 91
+(
+ #"n\303\243o se interseccione em o"
+ #"utro ponto que n\303\243o os v\303\251rtices do quadril\303\241tero "
+ #"(os dois Posns)"
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 141
+(
+ #"Sempre que uma bolha colide com u"
+ #"m objeto, seu numero de colisoes \303\251 aumentado em 1. Caso esse "
+ #"n\303\272mero vire MAX_COL ou maior, a bolha explode"
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 76
+(
+ #"Para facilitar a visualizacao, quando uma bolha explode aparece uma "
+ #"mensagem"
+) 0 0 17 29 1 #"\n"
+0 0 17 3 97
+(
+ #"escrito \"explodiu\" em uma fonte de algum desenhista muito talentos"
+ #"o (dizem as lendas ser DaVinci)"
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 70
+(
+ #"Isso das colis\303\265es \303\251 pra garantir que n\303\243o entre "
+ #"em um loop infinito."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 74
+(
+ #"Como eu fiz sozinho, a divis\303\243o das tarefas foi basicamente eu"
+ #" fazer tudo."
+) 0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 29 1 #"\n"
+0 0 17 3 2 #"|#"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
